@@ -8,10 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.Edit{" "}
-          <code>src/App.tsx</code> and save to reload.Edit{" "}
-          <code>src/App.tsx</code> and save to reload..
-          <code>src/App.tsxsrc/App.tsx</code>
+          Edit <code>src/App.tsx</code>
         </p>
         <a
           className="App-link"

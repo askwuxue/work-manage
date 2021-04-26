@@ -11,6 +11,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to reload.Edit{" "}
           <code>src/App.tsx</code> and save to reload.Edit{" "}
           <code>src/App.tsx</code> and save to reload..
+          <code>src/App.tsxsrc/App.tsx</code>
         </p>
         <a
           className="App-link"

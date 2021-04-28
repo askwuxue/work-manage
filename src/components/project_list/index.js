@@ -12,7 +12,7 @@ function ProjectList() {
   let [users, setUsers] = useState([]);
 
   // list列表
-  let [list, setList] = useState([]);
+  //   let [list, setList] = useState([]);
 
   // 初始化的用户名和用户Id
   let [param, setParam] = useState({

@@ -3,7 +3,10 @@
 // 然后导出的形式。从而做到防抖
 import { useState, useEffect } from "react";
 
-const useDebounce = function (value: any, delay: number) {
+// TODO any可以是任何值，也可以赋值给任何值， unknown可以是任何值，但是不加判断不能赋值给任何值
+// TODO 使用泛型约束函数的参数与返回值.当我们不清楚函数传递的参数的类型时，可以设置为泛型
+// ts 会帮助我们自动检测并返回正确的类型
+const useDebounce = function <K>(value: K, delay: number): K {
   let [debounceValue, setDebounceValue] = useState(value);
 
   // TODO 第一个回调函数，和componentDidMount的作用一致

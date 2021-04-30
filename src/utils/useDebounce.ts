@@ -3,7 +3,7 @@
 // 然后导出的形式。从而做到防抖
 import { useState, useEffect } from "react";
 
-const useDebounce = function (value, delay) {
+const useDebounce = function (value: any, delay: number) {
   let [debounceValue, setDebounceValue] = useState(value);
 
   // TODO 第一个回调函数，和componentDidMount的作用一致

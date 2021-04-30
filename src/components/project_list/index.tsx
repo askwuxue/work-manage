@@ -50,7 +50,7 @@ function ProjectList() {
   return (
     <div>
       <Search param={param} setParam={setParam} users={users}></Search>
-      <List users={users} list={list} setUsers={setUsers}></List>
+      <List users={users} list={list}></List>
     </div>
   );
 }

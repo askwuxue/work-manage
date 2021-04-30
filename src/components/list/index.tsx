@@ -1,6 +1,20 @@
-import { React } from "react";
+// import { React } from "react";
+import { User } from "../search/index";
 
-function List({ users, list }) {
+interface Project {
+  id: string;
+  name: string;
+  personId: string;
+  organization: string;
+  created: string;
+}
+
+interface ListProps {
+  users: User[];
+  list: Project[];
+}
+
+function List({ users, list }: ListProps) {
   return (
     <div>
       <table>

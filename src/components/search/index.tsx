@@ -1,7 +1,21 @@
 import React from "react";
 
+export interface User {
+  id: string;
+  name: string;
+}
+
+interface SearchProps {
+  param: {
+    name: string;
+    personId: string;
+  };
+  setParam: (param: SearchProps["param"]) => void;
+  users: User[];
+}
+
 // TODO 函数参数的结构赋值
-function Search({ param, setParam, users }) {
+function Search({ param, setParam, users }: SearchProps) {
   return (
     <form>
       <div>

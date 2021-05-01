@@ -4,6 +4,7 @@
     "target": "es5",
     // 用来指定项目中要使用的库dom。代码不是在浏览器运行时候回修改
     "lib": ["dom", "dom.iterable", "esnext"],
+    // 使用对编译文件夹中的js文件进行编译
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

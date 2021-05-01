@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
+    // 要将ts转换为的js版本 es3, es5, es6
     "target": "es5",
+    // 用来指定项目中要使用的库dom。代码不是在浏览器运行时候回修改
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -9,12 +11,16 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
+    // 要使用的模块化的方案，规则。es2015 commonjs
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    // 编译之后的文件存放路径
+    // "outDir": ""
   },
+  // 要编译的文件夹
   "include": ["src"]
 }

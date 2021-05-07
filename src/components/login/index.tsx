@@ -6,11 +6,12 @@ const Login = function () {
   const login = (param: { username: string; password: string }) => {
     // TODO 对于有默认行为的事件，一定要阻止默认行为的发生。
     fetch(`${apiUrl}login`, {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(param),
+      mode: "no-cors",
+      // body: JSON.stringify(param),
     }).then(async (res) => {
       if (res.ok) {
         // setList(await res.json());

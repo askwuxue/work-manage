@@ -4,14 +4,22 @@ const apiUrl = process.env.REACT_APP_URI_API;
 
 const Login = function () {
   const login = (param: { username: string; password: string }) => {
+    console.log("param: ", param);
+    const myHeaders = new Headers({
+      "Content-Type": "text/plain",
+      "Content-Length": '"256',
+      "X-Custom-Header": "ProcessThisImmediately",
+    });
     // TODO 对于有默认行为的事件，一定要阻止默认行为的发生。
-    fetch(`${apiUrl}login`, {
-      method: "GET",
+    fetch(`http://localhost:8000/register/`, {
+      method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-type": "application/json",
       },
-      mode: "no-cors",
+      // headers: myHeaders,
       // body: JSON.stringify(param),
+      body: "name=111&age=12",
+      mode: "no-cors",
     }).then(async (res) => {
       if (res.ok) {
         // setList(await res.json());
